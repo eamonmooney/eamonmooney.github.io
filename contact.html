@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Eamon Mooney CV - Contact Me</title>
+        <link rel="icon" href="images/icon.ico" type="image/x-icon"/>
+        <link rel = "stylesheet"  type="text/css" href="css/index.css" />
+        <link rel = "stylesheet"  type="text/css" href="css/nav.css" />
+        <link rel = "stylesheet"  type="text/css" href="css/contact.css" />
+
+        <script src="javascript/contact.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <header id="main-header">
+        <h1>Eamon Mooney - Computer Science Student</h1>
+        <div>
+            <a href="index.html">HOME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </header>
+    <body onload="checkDate()">
+        <main>
+            <section id="contact-me">
+                <h2 id="contactTitle">Contact Me</h2>
+                <div id="contactContent">
+                    <form id="contactForm" onsubmit="return checkEmails() && validateForm()">
+                        <div id="dateLength">
+                            <label for="projectDate">Project Date & Length:</label><br>
+                            <div>
+                                <input type="date" id="projectDate" name="projectDate" required><br>
+
+                                <input type="number" id="inputDuration" name="duration" placeholder="mins">
+                            </div>
+                        </div>
+                        <br>
+                        <label for="projectDate">First Name:</label>
+                        <input type ="text" name="names" placeholder="First Name" required/>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="emails" placeholder="mymail@mail.com" required>
+
+                        <label for="confirm_email">Confirm Email:</label>
+                        <input type="email" id="confirm_email" name="confirm_email" placeholder="mymail@mail.com" required>
+
+                        <label for="ukTelephone">Phone Number:</label>
+                        <input type="tel" id="ukTelephone" name="ukTelephone" pattern="\d{3}-?\d{3}-?\d{4}" placeholder="Tel: xxx-xxx-xxxx" required><br>
+
+                        <textarea name="txtAr"rows= "4"cols="40"> I am contacting you because </textarea><br>
+
+                        <label for="contactMethod">Preferred Contact Method:</label><br>
+                        <select id="contactMethod" name="contactMethod" required>
+                            <option value="">Select Contact Method</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                        </select><br>
+
+                        <button type="submit" id="submit">Submit</button>
+                    </form>
+                    <div id="contactTxt">
+                        <h2>Wish to send me an email?</h2>
+                        <div id="contactDetails">
+                            <p class="contactInfo">Eamon Mooney</p>
+                            <p class="contactInfo">Email: <a href="mailto:230075926@aston.ac.uk">230075926@aston.ac.uk</a></p>
+                            <p class="contactInfo">Student number: 230075926</p>
+                        </div>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer>
+        <a href="https://github.com/eamonmooney" target="_blank">
+            <h2 class="socials">Explore my projects on <img id="githubLogo" src="images/GitHub_Logo_White.png" alt="Github Logo"></h2>
+        </a>
+        <a href="https://www.linkedin.com/in/eamon-mooney-4b1503252/" target="_blank">
+            <h2 class="socials">Connect with me on <img id="linkedinLogo" src="images/LinkedIn_Logo.png" alt="LinkedIn Logo"></h2>
+        </a>
+    </footer>
+</html>
