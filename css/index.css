@@ -1,0 +1,222 @@
+main {
+    background-color: #234282;
+}
+
+h2, h3 {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    width: 20%;
+}
+
+#aboutme {
+    height: 500px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 80px;
+}
+
+#aboutme div {
+    width:50%;
+    padding: 20px;
+    transition: border-color 0.5s ease;
+}
+
+#aboutme p {
+    font-size: 1.5em;
+}
+
+#aboutme h2 {
+    color:white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 2.5em;
+}
+
+#aboutme blockquote {
+    font-size: 1em;
+    margin: 10px;
+    padding: 10px;
+}
+
+#edu_work, #edu_workTitles, #education, #work-experience, #interests {
+    display: flex;
+    justify-content: space-between;
+}
+
+#educationTitle, #work-experienceTitle, #education, #work-experience, #education p, #work-experience p, #educationImg, #work-experienceImg, #interestsImg, #interestsContent, #interests p, #interestsTitle, #interests li {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+#education, #work-experience, #languageImgs, #languageDescs, #interests, #language1, #language2, #language3, #aboutme div {
+    background-color: #E0CBA8;
+    border: 10px solid black;
+    border-radius: 50px;
+    border-color: #41659F;
+    transition: border-color 0.5s ease;
+}
+
+#educationImg, #work-experienceImg, .languageImgs, #interestsImg {
+    background-color: white;
+}
+
+#interests {
+    width: 50%;
+}
+
+#work-experience {
+    width: 50%;
+    height: 10%;
+    margin-bottom: 6%; 
+}
+
+#work-experienceTitle {
+    margin-top: 6%;
+}
+
+#eduExpInt {
+    width: 65%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#education, #interests {
+    height: 22%;
+}
+
+#languageTitles, #languageImgs, #languageDescs {
+    display: flex;
+    justify-content: space-between;
+}
+
+#languageImgs, .languageImgs, #languageDescs, #skills h2{
+    margin: 10px;
+    padding: 10px;
+}
+.language {
+    margin: 5px;
+    padding: 5px;
+    width:100%;
+    text-align: center;
+}
+
+
+#language1, #language2, #language3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+#skills {
+    width:30%;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+#skillflex {
+    display: flex;
+}
+
+#processingLogo, #javaLogo, #javascriptLogo, #processingLogo2, #javaLogo2, #javascriptLogo2{
+    width: 150px; 
+    height: auto;
+    margin-left: 10px;
+}
+
+#educationImg {
+    width: auto;
+    height: auto;
+}
+
+#education:hover, #work-experience:hover, #interests:hover, #language1:hover, #language2:hover, #language3:hover, #aboutme div:hover  {
+    border-color: #7DAADA;
+}
+
+@media (max-width: 1000px) {
+    #processingLogo, #javaLogo, #javascriptLogo, #processingLogo2, #javaLogo2, #javascriptLogo2{
+        width: 75px; 
+        height: auto;
+        margin-left: 5px;
+    }
+
+    #educationImg {
+        width: 100px;
+    }
+
+    #education, #work-experience, #interests, #work-experienceImg, #interestsImg, #language1, #language2, #language3 {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #eduExpInt h2, #skills h2, #aboutme h2{
+        font-size: 1.5em;
+    }
+
+    #educationTitle, #work-experienceTitle, #interestsTitle {
+        margin: 5px;
+        border: 5px;
+    }
+
+    #education {
+        align-items: center; 
+        text-align: center;
+    }
+
+    #skillflex {
+        flex-direction:column;
+        align-items: center; 
+    }
+
+    #skills {
+        flex-direction: column;
+        width: 90%;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    #eduExpInt {
+        width: 90%;
+    }
+
+    #language1, #language2, #language3 {
+        width: 90%;
+    }
+
+    #aboutme {
+        width: 100%;
+    }
+
+    #aboutme div {
+        width: 75%;
+    }
+
+    #aboutme p {
+        font-size: 1em;
+    }
+}

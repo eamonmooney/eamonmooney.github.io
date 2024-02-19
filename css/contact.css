@@ -1,0 +1,130 @@
+#contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    margin-top: 20%;
+    padding-top: 100px;
+}
+
+#contactContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#contactTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 50%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    padding: 20px;
+}
+
+#contactDetails {
+    background-color: #E0CBA8;
+    border: 10px solid black;
+    border-radius: 50px;
+    border-color: #41659F;
+    transition: border-color 0.5s ease;
+    padding: 10px;
+}
+
+#contactTitle {
+    font-size: 2.5em;
+}
+
+#contactTxt h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contactTxt p {
+    font-size: 1.5em;
+}
+
+#contactForm {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E0CBA8;
+}
+
+#dateLength {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#dateLength div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#projectDate {
+    width: 60%;
+}
+
+#inputDuration {
+    width: 30%;
+}
+
+#contactForm label, #dateLength label {
+    margin-bottom: 5px;
+}
+
+#contactForm input, #contactForm select, #contactForm textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    resize: vertical;
+    width: auto;
+}
+
+#submit {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #0056b3;
+}
+
+.contactInfo {
+    margin: 10px;
+}
+
+@media (max-width: 1000px) {
+    #contactContent {
+        flex-direction:column-reverse;
+        align-items: center; 
+    }
+
+    #contactTxt {
+        width:100%;
+    }
+
+    #contactForm {
+        width: 300px;
+    }
+
+    #contactForm textarea{
+        height:200px;
+    }
+}
